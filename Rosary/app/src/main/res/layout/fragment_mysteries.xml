@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context="com.updatedapp.lija.rosary.MysteriesFragment">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="500sp"
+        android:layout_height="250sp"
+        android:src="@drawable/mother_mary"
+        android:paddingTop="10sp"
+        android:layout_marginLeft="-129sp"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="0sp"
+        android:background="@color/colorPrimary"
+        android:text="+"
+        android:textSize="60sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_below="@+id/tvCount"
+        android:layout_alignRight="@+id/photo"/>
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:paddingTop="0sp"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:textSize="60sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+    <ScrollView
+        android:layout_height="180sp"
+        android:layout_width="500sp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/photo"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photo"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </ScrollView>
+</RelativeLayout>
